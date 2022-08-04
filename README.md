@@ -1,7 +1,5 @@
 ## Tic Tac Toe
 
-### About
-
 Tic Tac Toe game - vs computer, vs friend.
 
 ### 💻 Technologies
