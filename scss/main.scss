@@ -1,0 +1,111 @@
+*, *::before, *::after {
+    box-sizing: border-box;
+}
+
+html, body, section, div, h1, p {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Arial';
+    background-color: #2C3E4F;
+}
+
+section {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    h1 {
+        color: #fff;
+        font-size: 3rem;
+        margin-bottom: 4rem;
+        position: relative;
+
+        &::before {
+            content: '';
+            position: absolute;
+            bottom: -5px;
+            left: 50%;
+            transform: translateX(-50%);
+            height: 4px;
+            width: 100px;
+            background-color: #fff;
+        }
+    }
+
+    p {
+        color: #fff;
+        font-size: .8rem;
+        margin-bottom: 1rem;
+    }
+
+    .board {
+        width: 225px;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+        margin-bottom: 3rem;
+
+        .item {
+            width: 75px;
+            height: 75px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-size: 2rem;
+            font-style: italic;
+            font-weight: 600;
+            color: #fff;
+            cursor: pointer;
+
+            &:nth-child(1), &:nth-child(2) {
+                border-right: 2px solid #2e89ff;
+            }
+
+            &:nth-child(4), &:nth-child(5) {
+                border-top: 2px solid #2e89ff;
+                border-right: 2px solid #2e89ff;
+            }
+
+            &:nth-child(6), &:nth-child(9) {
+                border-top: 2px solid #2e89ff;
+            }
+
+            &:nth-child(7), &:nth-child(8) {
+                border-top: 2px solid #2e89ff;
+                border-right: 2px solid #2e89ff;
+            }
+
+        }
+    }
+
+    button {
+        display: block;
+        width: 200px;
+        padding: 1rem .5rem;
+        font-size: 1rem;
+        font-weight: 600;
+        text-align: center;
+        text-decoration: none;
+        text-transform: uppercase;
+        background-color: #ffd22e;
+        color: #000;
+        border: none;
+        border-radius: 4px;
+        cursor: pointer;
+        
+        &:first-of-type {
+            margin-bottom: 1rem;
+        }
+    }
+}
+
+.swal2-popup .swal2-styled:focus {
+    box-shadow: none !important;
+}
