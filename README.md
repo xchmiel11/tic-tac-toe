@@ -1,7 +1,6 @@
 ## Tic Tac Toe
 
 Tic Tac Toe game - vs computer, vs friend.
-
 https://xchmiel11.github.io/tic-tac-toe/
 
 ### 💻 Technologies
